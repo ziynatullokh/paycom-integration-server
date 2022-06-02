@@ -23,9 +23,14 @@ async function pg() {
 		});
 		console.log(users);
 
-		// await db.users.create({
-		// 	user_phone: "998901515064",
-		// });
+		await db.users.create({
+			user_phone: "998901515064",
+			user_balance:1000
+		});
+		await db.users.create({
+			user_phone: "998998552200",
+			user_balance:1000
+		});
 
 		return db;
 	} catch (error) {

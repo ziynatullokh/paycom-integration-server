@@ -23,6 +23,8 @@ app.use(ErrorModifierMiddleware);
 async function server() {
 	const database = await db();
 
+	
+
 	app.use((req, res, next) => {
 		req.db = database;
 		next();

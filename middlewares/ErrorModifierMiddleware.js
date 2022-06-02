@@ -4,7 +4,7 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 	error.invalidAmount = function (res) {
 		res.status(200).json({
 			allow: false,
-			error: -31049,
+			error: -31049
 			
 		});
 	};
@@ -12,7 +12,7 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 	error.invalidAccount = function (res) {
 		res.status(200).json({
 			allow: false,
-			error: -31050,
+			error: -31050
 			
 		});
 	};

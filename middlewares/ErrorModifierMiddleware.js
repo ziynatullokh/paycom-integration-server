@@ -5,7 +5,7 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 		res.status(200).json({
 			allow: false,
 			error: {
-				code: -31001,
+				code: -31049,
 				message: {
 					ru: "Недопустимая сумма",
 					uz: "Noto'g'ri summa",

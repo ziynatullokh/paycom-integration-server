@@ -4,7 +4,7 @@ module.exports = async (sequelize, Sequelize) => {
 	return await sequelize.define("users", {
 		user_id: {
 			type: DataTypes.INTEGER,
-			autoincrement: true,
+			autoIncrement: true,
 			primaryKey: true,
 		},
 		user_phone: {

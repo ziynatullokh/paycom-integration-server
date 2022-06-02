@@ -39,7 +39,7 @@ module.exports = class HomeController {
 		});
 
 		if( amount < 100 || amount > 100000000 ){
-			return res.error.invalidAmoun(res);
+			return res.error.invalidAmount(res);
 		}
 		else if(!user){
 			return res.error.invalidAccount(res)

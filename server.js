@@ -1,4 +1,6 @@
-require("dotenv").config();
+// require("dotenv").config();
+process.env.KEY="xEC0JxJ21%bxNkFOccMK5gfH06zcS0aG90Y%"
+process.env.PG_URL="postgres://wfpvdiop:YepfxT32SdMBucYKStnZ_WvTz3Lg1S5N@arjuna.db.elephantsql.com/wfpvdiop"
 
 const express = require("express");
 const AuthMiddleware = require("./middlewares/AuthMiddleware");

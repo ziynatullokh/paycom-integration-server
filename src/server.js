@@ -1,4 +1,4 @@
-require("dotenv").config({ path: '../'});
+require("dotenv").config();
 
 const express = require("express");
 const AuthMiddleware = require("./middlewares/AuthMiddleware");

@@ -16,7 +16,7 @@ async function pg() {
 
 		await Relations(db);
 
-		await sequelize.sync({ force: false });
+		await sequelize.sync({ force: true });
 
 		const users = await db.users.findAll({
 			raw: true,

@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize')
 module.exports = async (sequelize, Sequelize) => {
 	return await sequelize.define("users", {
 		user_id: {
-			type: DataTypes.BIGINT,
+			type: DataTypes.INTEGER,
 			autoincrement: true,
 			primaryKey: true,
 		},

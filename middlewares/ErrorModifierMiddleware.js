@@ -4,8 +4,8 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 	error.invalidAmount = function (res) {
 		res.status(200).json({
 			allow: false,
+			code: -31049,
 			error: {
-				code: -31049,
 				message: {
 					ru: "Недопустимая сумма",
 					uz: "Noto'g'ri summa",
@@ -18,8 +18,8 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 	error.invalidAccount = function (res) {
 		res.status(200).json({
 			allow: false,
+			code: -31050,
 			error: {
-				code: -31050,
 				message: {
 					ru: "Мы не нашли вашу учетную запись",
 					uz: "Biz sizning hisobingizni topolmadik.",

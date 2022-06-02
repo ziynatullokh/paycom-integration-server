@@ -5,13 +5,7 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 		res.status(200).json({
 			allow: false,
 			error: -31049,
-			// error: {
-			// 	message: {
-			// 		ru: "Недопустимая сумма",
-			// 		uz: "Noto'g'ri summa",
-			// 		en: "Invalid amount",
-			// 	},
-			// },
+			
 		});
 	};
 
@@ -19,14 +13,7 @@ module.exports = function ErrorModifierMiddleware(req, res, next) {
 		res.status(200).json({
 			allow: false,
 			error: -31050,
-			// error: {
-			// 	message: {
-			// 		ru: "Мы не нашли вашу учетную запись",
-			// 		uz: "Biz sizning hisobingizni topolmadik.",
-			// 		en: "We couldn't find your account",
-			// 	},
-			// 	data: "user_id", // you can change it
-			// },
+			
 		});
 	};
 

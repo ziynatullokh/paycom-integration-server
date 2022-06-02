@@ -39,30 +39,10 @@ module.exports = class HomeController {
 		});
 
 		if( amount < 100 || amount > 100000000 ){
-			return res.status(200).json({
-				"result":{
-					"allow":31001
-				},
-				"message": {
-					ru: "Недопустимая сумма",
-					uz: "Noto'g'ri summa",
-					en: "Invalid amount",
-				},
-				data:req.body.params.account.user_id
-			})
+			return res.error.invalidAmoun(res);
 		}
 		else if(!user){
-			return res.status(200).json({
-				"result":{
-					"allow":31050
-				},
-				"message": {
-					ru: "Недопустимая сумма",
-					uz: "Noto'g'ri summa",
-					en: "Invalid amount",
-				},
-				data:req.body.params.account.user_id
-			})
+			return res.error.invalidAccount(res)
 		}
 
 		res.json({
